@@ -41,13 +41,14 @@ public class JDlgMcbUsuario extends javax.swing.JDialog {
         JBtnConfirmarBataglin = new javax.swing.JButton();
         JBtnPesquisarBataglin = new javax.swing.JButton();
         JCmoNivelBataglin = new javax.swing.JComboBox<>();
-        JChbAtivo = new javax.swing.JCheckBox();
         JFmtDataBataglin = new javax.swing.JFormattedTextField();
         JFmtCPFBataglin = new javax.swing.JFormattedTextField();
         JPwfSenhaBataglin = new javax.swing.JPasswordField();
         JTxtCodigoBataglin = new javax.swing.JTextField();
         JTxtNomeBataglin = new javax.swing.JTextField();
         JTxtApelidoBataglin = new javax.swing.JTextField();
+        JCboAtivoBataglin = new javax.swing.JComboBox<>();
+        JLblAtivoBataglin = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -90,14 +91,11 @@ public class JDlgMcbUsuario extends javax.swing.JDialog {
 
         JCmoNivelBataglin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        JChbAtivo.setText("Ativo");
-        JChbAtivo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JChbAtivoActionPerformed(evt);
-            }
-        });
-
         JPwfSenhaBataglin.setText("jPasswordField1");
+
+        JCboAtivoBataglin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        JLblAtivoBataglin.setText("Ativo");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -116,25 +114,21 @@ public class JDlgMcbUsuario extends javax.swing.JDialog {
                             .addComponent(JTxtCodigoBataglin)
                             .addComponent(JPwfSenhaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(JFmtDataBataglin, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(JTxtNomeBataglin)
-                                        .addGap(224, 224, 224))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel2)
-                                            .addComponent(jLabel6)
-                                            .addComponent(jLabel4)
-                                            .addComponent(JCmoNivelBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(JFmtCPFBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(JTxtNomeBataglin)
+                                .addGap(224, 224, 224))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(36, 36, 36)
-                                .addComponent(JChbAtivo, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap())))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel4)
+                                    .addComponent(JCmoNivelBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(JFmtCPFBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(JCboAtivoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(JLblAtivoBataglin))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(JBtnincluirBataglin)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -176,11 +170,13 @@ public class JDlgMcbUsuario extends javax.swing.JDialog {
                     .addComponent(JCmoNivelBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JFmtDataBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
-                .addComponent(jLabel7)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(JLblAtivoBataglin))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JPwfSenhaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JChbAtivo))
+                    .addComponent(JCboAtivoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JBtnincluirBataglin)
@@ -194,10 +190,6 @@ public class JDlgMcbUsuario extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void JChbAtivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbAtivoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JChbAtivoActionPerformed
 
     private void JBtnincluirBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBtnincluirBataglinActionPerformed
         // TODO add your handling code here:
@@ -252,11 +244,12 @@ public class JDlgMcbUsuario extends javax.swing.JDialog {
     private javax.swing.JButton JBtnExcluirBataglin;
     private javax.swing.JButton JBtnPesquisarBataglin;
     private javax.swing.JButton JBtnincluirBataglin;
-    private javax.swing.JCheckBox JChbAtivo;
+    private javax.swing.JComboBox<String> JCboAtivoBataglin;
     private javax.swing.JComboBox<String> JCmoNivelBataglin;
     private javax.swing.JFormattedTextField JFmtCPFBataglin;
     private javax.swing.JFormattedTextField JFmtDataBataglin;
     private javax.swing.JLabel JLblApelidoBataglin;
+    private javax.swing.JLabel JLblAtivoBataglin;
     private javax.swing.JPasswordField JPwfSenhaBataglin;
     private javax.swing.JTextField JTxtApelidoBataglin;
     private javax.swing.JTextField JTxtCodigoBataglin;

@@ -37,29 +37,22 @@
                           <Component id="JPwfSenhaBataglin" alignment="0" min="-2" pref="126" max="-2" attributes="0"/>
                           <Component id="JFmtDataBataglin" alignment="1" max="32767" attributes="0"/>
                       </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="JTxtNomeBataglin" max="32767" attributes="0"/>
-                                      <EmptySpace min="-2" pref="224" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                          <Component id="JCmoNivelBataglin" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="JFmtCPFBataglin" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="JTxtNomeBataglin" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="224" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                              <Component id="JChbAtivo" min="-2" pref="126" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="JCmoNivelBataglin" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="JFmtCPFBataglin" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
+                                  <Component id="JCboAtivoBataglin" min="-2" max="-2" attributes="0"/>
+                                  <Component id="JLblAtivoBataglin" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -115,11 +108,14 @@
                   <Component id="JFmtDataBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JLblAtivoBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="JPwfSenhaBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JChbAtivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JCboAtivoBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="84" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -237,14 +233,6 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="JChbAtivo">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ativo"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JChbAtivoActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JFormattedTextField" name="JFmtDataBataglin">
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="JFmtCPFBataglin">
@@ -259,6 +247,26 @@
     <Component class="javax.swing.JTextField" name="JTxtNomeBataglin">
     </Component>
     <Component class="javax.swing.JTextField" name="JTxtApelidoBataglin">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="JCboAtivoBataglin">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="JLblAtivoBataglin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ativo"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
