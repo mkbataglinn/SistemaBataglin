@@ -32,7 +32,7 @@ public class JFrmBataglin extends javax.swing.JFrame {
         JChbClienteBataglin = new javax.swing.JCheckBoxMenuItem();
         JChbFornecedorBataglin = new javax.swing.JCheckBoxMenuItem();
         JChbProdutoBataglin = new javax.swing.JCheckBoxMenuItem();
-        JChbCategoriaBataglin = new javax.swing.JCheckBoxMenuItem();
+        JChbVendedorBataglin = new javax.swing.JCheckBoxMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         JChbSairBataglin = new javax.swing.JCheckBoxMenuItem();
         jMenu2 = new javax.swing.JMenu();
@@ -80,15 +80,15 @@ public class JFrmBataglin extends javax.swing.JFrame {
         });
         jMenu1.add(JChbProdutoBataglin);
 
-        JChbCategoriaBataglin.setSelected(true);
-        JChbCategoriaBataglin.setText("Categoria");
-        JChbCategoriaBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/categoria.png"))); // NOI18N
-        JChbCategoriaBataglin.addActionListener(new java.awt.event.ActionListener() {
+        JChbVendedorBataglin.setSelected(true);
+        JChbVendedorBataglin.setText("Vendedor");
+        JChbVendedorBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/categoria.png"))); // NOI18N
+        JChbVendedorBataglin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JChbCategoriaBataglinActionPerformed(evt);
+                JChbVendedorBataglinActionPerformed(evt);
             }
         });
-        jMenu1.add(JChbCategoriaBataglin);
+        jMenu1.add(JChbVendedorBataglin);
         jMenu1.add(jSeparator1);
 
         JChbSairBataglin.setSelected(true);
@@ -147,9 +147,9 @@ public class JFrmBataglin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_JChbComprasBataglinActionPerformed
 
-    private void JChbCategoriaBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbCategoriaBataglinActionPerformed
+    private void JChbVendedorBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbVendedorBataglinActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_JChbCategoriaBataglinActionPerformed
+    }//GEN-LAST:event_JChbVendedorBataglinActionPerformed
 
     private void JChbProdutoBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbProdutoBataglinActionPerformed
         // TODO add your handling code here:
@@ -199,7 +199,6 @@ public class JFrmBataglin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBoxMenuItem JChbCategoriaBataglin;
     private javax.swing.JCheckBoxMenuItem JChbClienteBataglin;
     private javax.swing.JCheckBoxMenuItem JChbComprasBataglin;
     private javax.swing.JCheckBoxMenuItem JChbCompras_ProdutosBataglin;
@@ -209,6 +208,7 @@ public class JFrmBataglin extends javax.swing.JFrame {
     private javax.swing.JCheckBoxMenuItem JChbUsuarioBataglin;
     private javax.swing.JCheckBoxMenuItem JChbVendasBataglin;
     private javax.swing.JCheckBoxMenuItem JChbVendas_ProdutoBataglin;
+    private javax.swing.JCheckBoxMenuItem JChbVendedorBataglin;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;

@@ -80,7 +80,7 @@ public class JDlgMcbUsuario extends javax.swing.JDialog {
         JBtnAlterarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         JBtnAlterarBataglin.setText("Alterar");
 
-        JBtnCancelarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); // NOI18N
+        JBtnCancelarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         JBtnCancelarBataglin.setText("Cancelar");
 
         JBtnConfirmarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
