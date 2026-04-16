@@ -190,7 +190,6 @@ public class JFrmBataglin extends javax.swing.JFrame {
         // TODO add your handling code here:
           JDlgMcbVendedor jDlgMcbVendedor = new JDlgMcbVendedor(null, true);
         jDlgMcbVendedor.setVisible(true);
-        
     }//GEN-LAST:event_JChbVendedorBataglinActionPerformed
 
     /**

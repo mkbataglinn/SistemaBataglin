@@ -72,47 +72,47 @@
                           <Component id="JLblNomeBataglin" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="JLblCEPBataglin" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="JLblCPFBataglin" min="-2" max="-2" attributes="0"/>
-                          <Component id="JFmtCEPBataglin" pref="149" max="32767" attributes="0"/>
-                          <Component id="JFmtCPFBataglin" max="32767" attributes="0"/>
-                          <Component id="JTxtNomeBataglin" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jFmtCEPBataglin" pref="149" max="32767" attributes="0"/>
+                          <Component id="jFmtCPFBataglin" max="32767" attributes="0"/>
+                          <Component id="jTxtNomeBataglin" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="JTxtEmailBataglin" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                                  <Component id="jTxtEmailBataglin" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
                                   <Component id="JLblEmailBataglin" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="JLblTelefoneBataglin" min="-2" max="-2" attributes="0"/>
-                                  <Component id="JFmtTelefoneBataglin" min="-2" pref="263" max="-2" attributes="0"/>
+                                  <Component id="jFmtTelefoneBataglin" min="-2" pref="263" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="JFmtRGBataglin" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
+                                  <Component id="jFmtRGBataglin" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
                                   <Component id="JLblRGBataglin" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="JLblDataNascBataglin" min="-2" max="-2" attributes="0"/>
-                                  <Component id="JFmtDataNascBataglin" min="-2" pref="132" max="-2" attributes="0"/>
+                                  <Component id="jFmtDataNascBataglin" min="-2" pref="132" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="JLblSexoBataglin" min="-2" max="-2" attributes="0"/>
-                                  <Component id="JTxtSexoBataglin" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                  <Component id="jTxtSexoBataglin" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="JTxtEstadoBataglin" min="-2" pref="70" max="-2" attributes="0"/>
+                                      <Component id="jTxtEstadoBataglin" min="-2" pref="70" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="JLblBairroBataglin" min="-2" max="-2" attributes="0"/>
-                                          <Component id="JTxtBairroBataglin" min="-2" pref="79" max="-2" attributes="0"/>
+                                          <Component id="jTxtBairroBataglin" min="-2" pref="79" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Component id="JLblEstadoBataglin" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -120,10 +120,10 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="JTxtCidadeBataglin" min="-2" pref="240" max="-2" attributes="0"/>
+                                      <Component id="jTxtCidadeBataglin" min="-2" pref="240" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="JTxtRuaBataglin" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                                          <Component id="jTxtRuaBataglin" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
                                           <Component id="JLblRuaBataglin" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -131,7 +131,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="JFmtNumeroBataglin" min="-2" pref="44" max="-2" attributes="0"/>
+                                  <Component id="jFmtNumeroBataglin" min="-2" pref="44" max="-2" attributes="0"/>
                                   <Component id="JLblEnderecoBataglin" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -142,13 +142,13 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="JBtnIncluirBataglin" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <Component id="jBtnIncluirBataglin" min="-2" pref="140" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="JBtnExcluirBataglin" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <Component id="jBtnExcluirBataglin" min="-2" pref="140" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="JBtnAlterarBataglin" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <Component id="jBtnAlterarBataglin" min="-2" pref="140" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="JBtnCancelarBataglin" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <Component id="jBtnCancelarBataglin" min="-2" pref="140" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
@@ -161,15 +161,15 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                              <Component id="JTxtCodigoBataglin" min="-2" pref="91" max="-2" attributes="0"/>
+                              <Component id="jTxtCodigoBataglin" min="-2" pref="91" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
-                              <Component id="JPwfSenhaBataglin" min="-2" pref="320" max="-2" attributes="0"/>
+                              <Component id="jPwfSenhaBataglin" min="-2" pref="320" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="JChbAtivoBataglin1" min="-2" max="-2" attributes="0"/>
-                          <Component id="JBtnConfirmarBataglin" min="-2" pref="140" max="-2" attributes="0"/>
+                          <Component id="jChbAtivoBataglin1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBtnConfirmarBataglin" min="-2" pref="140" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -188,9 +188,9 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JTxtNomeBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JTxtEmailBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JFmtTelefoneBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtNomeBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtEmailBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtTelefoneBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -205,10 +205,10 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JTxtSexoBataglin" alignment="3" max="32767" attributes="0"/>
-                  <Component id="JFmtDataNascBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JFmtRGBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JFmtCPFBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtSexoBataglin" alignment="3" max="32767" attributes="0"/>
+                  <Component id="jFmtDataNascBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtRGBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtCPFBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -221,12 +221,12 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JFmtCEPBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JTxtEstadoBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JTxtBairroBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JTxtCidadeBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JTxtRuaBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JFmtNumeroBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtCEPBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtEstadoBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtBairroBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtCidadeBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtRuaBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtNumeroBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -235,17 +235,17 @@
               </Group>
               <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JPwfSenhaBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JTxtCodigoBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JChbAtivoBataglin1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jPwfSenhaBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtCodigoBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jChbAtivoBataglin1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="JBtnIncluirBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JBtnExcluirBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JBtnAlterarBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JBtnCancelarBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="JBtnConfirmarBataglin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="jBtnIncluirBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnExcluirBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnAlterarBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnCancelarBataglin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnConfirmarBataglin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
           </Group>
@@ -313,24 +313,24 @@
         <Property name="text" type="java.lang.String" value="Senha"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="JTxtNomeBataglin">
+    <Component class="javax.swing.JTextField" name="jTxtNomeBataglin">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JTxtNomeBataglinActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtNomeBataglinActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="JTxtEmailBataglin">
+    <Component class="javax.swing.JTextField" name="jTxtEmailBataglin">
     </Component>
-    <Component class="javax.swing.JTextField" name="JTxtBairroBataglin">
+    <Component class="javax.swing.JTextField" name="jTxtBairroBataglin">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JTxtBairroBataglinActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtBairroBataglinActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="JTxtCidadeBataglin">
+    <Component class="javax.swing.JTextField" name="jTxtCidadeBataglin">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JTxtCidadeBataglinActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtCidadeBataglinActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="JTxtEstadoBataglin">
+    <Component class="javax.swing.JTextField" name="jTxtEstadoBataglin">
     </Component>
     <Component class="javax.swing.JLabel" name="JLblCPFBataglin">
       <Properties>
@@ -342,28 +342,28 @@
         <Property name="text" type="java.lang.String" value="N&#xfa;mero"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="JTxtRuaBataglin">
+    <Component class="javax.swing.JTextField" name="jTxtRuaBataglin">
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="JFmtNumeroBataglin">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtNumeroBataglin">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JFmtNumeroBataglinActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jFmtNumeroBataglinActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="JFmtCEPBataglin">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtCEPBataglin">
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="JFmtCPFBataglin">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtCPFBataglin">
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="JFmtRGBataglin">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtRGBataglin">
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="JFmtDataNascBataglin">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtDataNascBataglin">
     </Component>
-    <Component class="javax.swing.JTextField" name="JTxtSexoBataglin">
+    <Component class="javax.swing.JTextField" name="jTxtSexoBataglin">
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="JFmtTelefoneBataglin">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtTelefoneBataglin">
     </Component>
-    <Component class="javax.swing.JPasswordField" name="JPwfSenhaBataglin">
+    <Component class="javax.swing.JPasswordField" name="jPwfSenhaBataglin">
     </Component>
-    <Component class="javax.swing.JButton" name="JBtnIncluirBataglin">
+    <Component class="javax.swing.JButton" name="jBtnIncluirBataglin">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="fc" green="f5" red="a8" type="rgb"/>
@@ -374,7 +374,7 @@
         <Property name="text" type="java.lang.String" value="Incluir"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="JBtnExcluirBataglin">
+    <Component class="javax.swing.JButton" name="jBtnExcluirBataglin">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="ff" type="rgb"/>
@@ -385,7 +385,7 @@
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="JBtnAlterarBataglin">
+    <Component class="javax.swing.JButton" name="jBtnAlterarBataglin">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/alterar.png"/>
@@ -393,7 +393,7 @@
         <Property name="text" type="java.lang.String" value="Alterar"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="JBtnCancelarBataglin">
+    <Component class="javax.swing.JButton" name="jBtnCancelarBataglin">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="cc" red="99" type="rgb"/>
@@ -404,10 +404,10 @@
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBtnCancelarBataglinActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnCancelarBataglinActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="JBtnConfirmarBataglin">
+    <Component class="javax.swing.JButton" name="jBtnConfirmarBataglin">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="99" red="0" type="rgb"/>
@@ -423,9 +423,9 @@
         <Property name="text" type="java.lang.String" value="C&#xf3;digo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="JTxtCodigoBataglin">
+    <Component class="javax.swing.JTextField" name="jTxtCodigoBataglin">
     </Component>
-    <Component class="javax.swing.JCheckBox" name="JChbAtivoBataglin1">
+    <Component class="javax.swing.JCheckBox" name="jChbAtivoBataglin1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ativo"/>
       </Properties>

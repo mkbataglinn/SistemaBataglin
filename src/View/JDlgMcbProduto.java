@@ -29,15 +29,15 @@ public class JDlgMcbProduto extends javax.swing.JDialog {
 
         JPwfSenhaBataglin = new javax.swing.JPasswordField();
         JLblSenhaBataglin = new javax.swing.JLabel();
+        JCboAtivoBataglin = new javax.swing.JComboBox<>();
+        JLblAtivoBataglin = new javax.swing.JLabel();
         JLblPrecoBataglin = new javax.swing.JLabel();
         JFmtCodBarrasBataglin = new javax.swing.JFormattedTextField();
-        JCboAtivoBataglin = new javax.swing.JComboBox<>();
         JBtnIncluirBataglin = new javax.swing.JButton();
         JFmtPrecoBataglin = new javax.swing.JFormattedTextField();
         JLblCodProdutoBataglin = new javax.swing.JLabel();
         JFmtTipoBataglin = new javax.swing.JFormattedTextField();
         JBtnExcluirBataglin = new javax.swing.JButton();
-        JLblAtivoBataglin = new javax.swing.JLabel();
         JBtnAlterarBataglin = new javax.swing.JButton();
         JLblTipoBataglin = new javax.swing.JLabel();
         JBtnCancelarBataglin = new javax.swing.JButton();
@@ -48,6 +48,7 @@ public class JDlgMcbProduto extends javax.swing.JDialog {
         JLblCodBarrasBataglin = new javax.swing.JLabel();
         JLblDescricaoBataglin = new javax.swing.JLabel();
         JTxtNomeBataglin = new javax.swing.JTextField();
+        jChbAtivoBataglin = new javax.swing.JCheckBox();
 
         JPwfSenhaBataglin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,11 +58,18 @@ public class JDlgMcbProduto extends javax.swing.JDialog {
 
         JLblSenhaBataglin.setText("Senha");
 
+        JCboAtivoBataglin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        JCboAtivoBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JCboAtivoBataglinActionPerformed(evt);
+            }
+        });
+
+        JLblAtivoBataglin.setText("Ativo");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         JLblPrecoBataglin.setText("Preço");
-
-        JCboAtivoBataglin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         JBtnIncluirBataglin.setBackground(new java.awt.Color(168, 245, 252));
         JBtnIncluirBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
@@ -72,8 +80,6 @@ public class JDlgMcbProduto extends javax.swing.JDialog {
         JBtnExcluirBataglin.setBackground(new java.awt.Color(255, 102, 102));
         JBtnExcluirBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         JBtnExcluirBataglin.setText("Excluir");
-
-        JLblAtivoBataglin.setText("Ativo");
 
         JBtnAlterarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         JBtnAlterarBataglin.setText("Alterar");
@@ -100,59 +106,58 @@ public class JDlgMcbProduto extends javax.swing.JDialog {
 
         JLblDescricaoBataglin.setText("Descrição");
 
+        jChbAtivoBataglin.setText("Ativo");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(JLblCodProdutoBataglin)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(JLblAtivoBataglin)
-                .addGap(122, 122, 122))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JLblTipoBataglin)
-                            .addComponent(JLblNomeBataglin)))
+                        .addGap(62, 62, 62)
+                        .addComponent(JLblCodProdutoBataglin))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JFmtCodProdutoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(JBtnIncluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JTxtNomeBataglin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(JFmtTipoBataglin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addComponent(JBtnExcluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(JBtnAlterarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(JBtnCancelarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(JBtnConfirmarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(JLblCodBarrasBataglin)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(JFmtCodBarrasBataglin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
-                            .addComponent(JLblDescricaoBataglin, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JTxtDescricaoBataglin, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(29, 29, 29)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(JLblTipoBataglin)
+                                    .addComponent(JLblNomeBataglin)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(33, 33, 33)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(JFmtCodProdutoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(JBtnIncluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(JTxtNomeBataglin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(JFmtTipoBataglin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JLblPrecoBataglin)
-                            .addComponent(JFmtPrecoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(JLblCodBarrasBataglin)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(JFmtCodBarrasBataglin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
+                                    .addComponent(JLblDescricaoBataglin, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(JTxtDescricaoBataglin, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(JLblPrecoBataglin)
+                                    .addComponent(JFmtPrecoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(JBtnExcluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(JBtnAlterarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(JBtnCancelarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jChbAtivoBataglin)
+                                    .addComponent(JBtnConfirmarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(JCboAtivoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(95, 95, 95))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -176,13 +181,11 @@ public class JDlgMcbProduto extends javax.swing.JDialog {
                     .addComponent(JFmtCodBarrasBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JFmtTipoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JLblAtivoBataglin)
-                    .addComponent(JLblCodProdutoBataglin))
+                .addComponent(JLblCodProdutoBataglin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JFmtCodProdutoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JCboAtivoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jChbAtivoBataglin))
                 .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JBtnIncluirBataglin)
@@ -203,6 +206,10 @@ public class JDlgMcbProduto extends javax.swing.JDialog {
     private void JTxtDescricaoBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTxtDescricaoBataglinActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_JTxtDescricaoBataglinActionPerformed
+
+    private void JCboAtivoBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JCboAtivoBataglinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JCboAtivoBataglinActionPerformed
 
     /**
      * @param args the command line arguments
@@ -268,5 +275,6 @@ public class JDlgMcbProduto extends javax.swing.JDialog {
     private javax.swing.JPasswordField JPwfSenhaBataglin;
     private javax.swing.JTextField JTxtDescricaoBataglin;
     private javax.swing.JTextField JTxtNomeBataglin;
+    private javax.swing.JCheckBox jChbAtivoBataglin;
     // End of variables declaration//GEN-END:variables
 }
