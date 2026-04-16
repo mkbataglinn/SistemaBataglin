@@ -8,12 +8,12 @@ package View;
  *
  * @author u07788816108
  */
-public class JDlgMcbVendedor extends javax.swing.JDialog {
+public class JDlgMcbProduto extends javax.swing.JDialog {
 
     /**
-     * Creates new form JDlgMcbVendedor
+     * Creates new form JDlgMcbProduto
      */
-    public JDlgMcbVendedor(java.awt.Frame parent, boolean modal) {
+    public JDlgMcbProduto(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -27,43 +27,58 @@ public class JDlgMcbVendedor extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        JBtnIncluirBataglin = new javax.swing.JButton();
-        JBtnExcluirBataglin = new javax.swing.JButton();
-        JBtnAlterarBataglin = new javax.swing.JButton();
-        JBtnCancelarBataglin = new javax.swing.JButton();
-        JBtnConfirmarBataglin = new javax.swing.JButton();
-        JLblNomeBataglin = new javax.swing.JLabel();
-        JLblDataContrBataglin = new javax.swing.JLabel();
-        JLblEmailBataglin = new javax.swing.JLabel();
-        JLblTelefoneBataglin = new javax.swing.JLabel();
         JPwfSenhaBataglin = new javax.swing.JPasswordField();
         JLblSenhaBataglin = new javax.swing.JLabel();
-        JLblCodigoBataglin = new javax.swing.JLabel();
-        JLblCPFBataglin = new javax.swing.JLabel();
-        JFmtCodigoBataglin = new javax.swing.JFormattedTextField();
-        JTxtEmailBataglin = new javax.swing.JTextField();
+        JLblPrecoBataglin = new javax.swing.JLabel();
+        JFmtCodBarrasBataglin = new javax.swing.JFormattedTextField();
+        JCboAtivoBataglin = new javax.swing.JComboBox<>();
+        JBtnIncluirBataglin = new javax.swing.JButton();
+        JFmtPrecoBataglin = new javax.swing.JFormattedTextField();
+        JLblCodProdutoBataglin = new javax.swing.JLabel();
+        JFmtTipoBataglin = new javax.swing.JFormattedTextField();
+        JBtnExcluirBataglin = new javax.swing.JButton();
+        JLblAtivoBataglin = new javax.swing.JLabel();
+        JBtnAlterarBataglin = new javax.swing.JButton();
+        JLblTipoBataglin = new javax.swing.JLabel();
+        JBtnCancelarBataglin = new javax.swing.JButton();
+        JFmtCodProdutoBataglin = new javax.swing.JFormattedTextField();
+        JBtnConfirmarBataglin = new javax.swing.JButton();
+        JLblNomeBataglin = new javax.swing.JLabel();
+        JTxtDescricaoBataglin = new javax.swing.JTextField();
+        JLblCodBarrasBataglin = new javax.swing.JLabel();
+        JLblDescricaoBataglin = new javax.swing.JLabel();
         JTxtNomeBataglin = new javax.swing.JTextField();
-        JFmtDataContrBataglin = new javax.swing.JFormattedTextField();
-        JFmtTelefoneBataglin = new javax.swing.JFormattedTextField();
-        JFmtCPFBataglin = new javax.swing.JFormattedTextField();
-        JChbAtivoBataglin1 = new javax.swing.JCheckBox();
 
-        jLabel5.setText("jLabel5");
+        JPwfSenhaBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JPwfSenhaBataglinActionPerformed(evt);
+            }
+        });
+
+        JLblSenhaBataglin.setText("Senha");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        JLblPrecoBataglin.setText("Preço");
+
+        JCboAtivoBataglin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         JBtnIncluirBataglin.setBackground(new java.awt.Color(168, 245, 252));
         JBtnIncluirBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         JBtnIncluirBataglin.setText("Incluir");
 
+        JLblCodProdutoBataglin.setText("Código/Produto");
+
         JBtnExcluirBataglin.setBackground(new java.awt.Color(255, 102, 102));
         JBtnExcluirBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         JBtnExcluirBataglin.setText("Excluir");
 
+        JLblAtivoBataglin.setText("Ativo");
+
         JBtnAlterarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         JBtnAlterarBataglin.setText("Alterar");
+
+        JLblTipoBataglin.setText("Tipo");
 
         JBtnCancelarBataglin.setBackground(new java.awt.Color(153, 204, 255));
         JBtnCancelarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
@@ -75,88 +90,69 @@ public class JDlgMcbVendedor extends javax.swing.JDialog {
 
         JLblNomeBataglin.setText("Nome");
 
-        JLblDataContrBataglin.setText("Data de Contrato");
-
-        JLblEmailBataglin.setText("Email");
-
-        JLblTelefoneBataglin.setText("Telefone");
-
-        JPwfSenhaBataglin.addActionListener(new java.awt.event.ActionListener() {
+        JTxtDescricaoBataglin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JPwfSenhaBataglinActionPerformed(evt);
+                JTxtDescricaoBataglinActionPerformed(evt);
             }
         });
 
-        JLblSenhaBataglin.setText("Senha");
+        JLblCodBarrasBataglin.setText("Código de Barras");
 
-        JLblCodigoBataglin.setText("Código");
-
-        JLblCPFBataglin.setText("CPF");
-
-        JTxtEmailBataglin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JTxtEmailBataglinActionPerformed(evt);
-            }
-        });
-
-        JChbAtivoBataglin1.setText("Ativo");
+        JLblDescricaoBataglin.setText("Descrição");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(75, 75, 75)
-                .addComponent(JLblCodigoBataglin)
+                .addGap(62, 62, 62)
+                .addComponent(JLblCodProdutoBataglin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(JLblSenhaBataglin)
-                .addGap(389, 389, 389))
+                .addComponent(JLblAtivoBataglin)
+                .addGap(122, 122, 122))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(29, 29, 29)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JLblCPFBataglin)
+                            .addComponent(JLblTipoBataglin)
                             .addComponent(JLblNomeBataglin)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(33, 33, 33)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JFmtCodigoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(JFmtCodProdutoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(JBtnIncluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(JTxtNomeBataglin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(JFmtCPFBataglin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(JFmtTipoBataglin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JLblDataContrBataglin)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(JBtnExcluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(JBtnAlterarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(JBtnCancelarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(JBtnConfirmarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JLblCodBarrasBataglin)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(JFmtDataContrBataglin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
-                            .addComponent(JLblEmailBataglin, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JTxtEmailBataglin, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(JFmtCodBarrasBataglin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
+                            .addComponent(JLblDescricaoBataglin, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(JTxtDescricaoBataglin, javax.swing.GroupLayout.Alignment.LEADING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JLblTelefoneBataglin)
-                            .addComponent(JFmtTelefoneBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(8, 8, 8)
-                                .addComponent(JBtnExcluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(JBtnAlterarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(JBtnCancelarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(81, 81, 81)
-                                .addComponent(JPwfSenhaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(JChbAtivoBataglin1)
-                            .addComponent(JBtnConfirmarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(JLblPrecoBataglin)
+                            .addComponent(JFmtPrecoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(JCboAtivoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(95, 95, 95))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -164,30 +160,29 @@ public class JDlgMcbVendedor extends javax.swing.JDialog {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JLblNomeBataglin)
-                    .addComponent(JLblEmailBataglin)
-                    .addComponent(JLblTelefoneBataglin))
+                    .addComponent(JLblDescricaoBataglin)
+                    .addComponent(JLblPrecoBataglin))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JTxtEmailBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JTxtDescricaoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JTxtNomeBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JFmtTelefoneBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JFmtPrecoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JLblDataContrBataglin)
-                    .addComponent(JLblCPFBataglin))
+                    .addComponent(JLblCodBarrasBataglin)
+                    .addComponent(JLblTipoBataglin))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JFmtDataContrBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JFmtCPFBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                    .addComponent(JFmtCodBarrasBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JFmtTipoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JLblSenhaBataglin)
-                    .addComponent(JLblCodigoBataglin))
+                    .addComponent(JLblAtivoBataglin)
+                    .addComponent(JLblCodProdutoBataglin))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JPwfSenhaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JFmtCodigoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JChbAtivoBataglin1))
+                    .addComponent(JFmtCodProdutoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JCboAtivoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JBtnIncluirBataglin)
@@ -205,9 +200,9 @@ public class JDlgMcbVendedor extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_JPwfSenhaBataglinActionPerformed
 
-    private void JTxtEmailBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTxtEmailBataglinActionPerformed
+    private void JTxtDescricaoBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTxtDescricaoBataglinActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_JTxtEmailBataglinActionPerformed
+    }//GEN-LAST:event_JTxtDescricaoBataglinActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,20 +221,20 @@ public class JDlgMcbVendedor extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgMcbVendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgMcbProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgMcbVendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgMcbProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgMcbVendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgMcbProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgMcbVendedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgMcbProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDlgMcbVendedor dialog = new JDlgMcbVendedor(new javax.swing.JFrame(), true);
+                JDlgMcbProduto dialog = new JDlgMcbProduto(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -257,22 +252,21 @@ public class JDlgMcbVendedor extends javax.swing.JDialog {
     private javax.swing.JButton JBtnConfirmarBataglin;
     private javax.swing.JButton JBtnExcluirBataglin;
     private javax.swing.JButton JBtnIncluirBataglin;
-    private javax.swing.JCheckBox JChbAtivoBataglin1;
-    private javax.swing.JFormattedTextField JFmtCPFBataglin;
-    private javax.swing.JFormattedTextField JFmtCodigoBataglin;
-    private javax.swing.JFormattedTextField JFmtDataContrBataglin;
-    private javax.swing.JFormattedTextField JFmtTelefoneBataglin;
-    private javax.swing.JLabel JLblCPFBataglin;
-    private javax.swing.JLabel JLblCodigoBataglin;
-    private javax.swing.JLabel JLblDataContrBataglin;
-    private javax.swing.JLabel JLblEmailBataglin;
+    private javax.swing.JComboBox<String> JCboAtivoBataglin;
+    private javax.swing.JFormattedTextField JFmtCodBarrasBataglin;
+    private javax.swing.JFormattedTextField JFmtCodProdutoBataglin;
+    private javax.swing.JFormattedTextField JFmtPrecoBataglin;
+    private javax.swing.JFormattedTextField JFmtTipoBataglin;
+    private javax.swing.JLabel JLblAtivoBataglin;
+    private javax.swing.JLabel JLblCodBarrasBataglin;
+    private javax.swing.JLabel JLblCodProdutoBataglin;
+    private javax.swing.JLabel JLblDescricaoBataglin;
     private javax.swing.JLabel JLblNomeBataglin;
+    private javax.swing.JLabel JLblPrecoBataglin;
     private javax.swing.JLabel JLblSenhaBataglin;
-    private javax.swing.JLabel JLblTelefoneBataglin;
+    private javax.swing.JLabel JLblTipoBataglin;
     private javax.swing.JPasswordField JPwfSenhaBataglin;
-    private javax.swing.JTextField JTxtEmailBataglin;
+    private javax.swing.JTextField JTxtDescricaoBataglin;
     private javax.swing.JTextField JTxtNomeBataglin;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

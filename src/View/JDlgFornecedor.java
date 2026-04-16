@@ -8,12 +8,12 @@ package View;
  *
  * @author u07788816108
  */
-public class JDlgMcbCliente extends javax.swing.JDialog {
+public class JDlgFornecedor extends javax.swing.JDialog {
 
     /**
-     * Creates new form JDlgMcbCliente
+     * Creates new form JDlgFornecedor
      */
-    public JDlgMcbCliente(java.awt.Frame parent, boolean modal) {
+    public JDlgFornecedor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -27,72 +27,53 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
-        jLabel14 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        JCboAtivoBataglin = new javax.swing.JCheckBox();
-        jButton6 = new javax.swing.JButton();
-        JLblNomeBataglin = new javax.swing.JLabel();
-        JLblCEPBataglin = new javax.swing.JLabel();
-        JLblCidadeBataglin = new javax.swing.JLabel();
-        JLblBairroBataglin = new javax.swing.JLabel();
-        JLblRGBataglin = new javax.swing.JLabel();
-        JLblEmailBataglin = new javax.swing.JLabel();
-        JLblTelefoneBataglin = new javax.swing.JLabel();
-        JLblEstadoBataglin = new javax.swing.JLabel();
-        JLblRuaBataglin = new javax.swing.JLabel();
-        JLblDataNascBataglin = new javax.swing.JLabel();
-        JLblSexoBataglin = new javax.swing.JLabel();
-        JLblSenhaBataglin = new javax.swing.JLabel();
-        JTxtNomeBataglin = new javax.swing.JTextField();
-        JTxtEmailBataglin = new javax.swing.JTextField();
-        JTxtBairroBataglin = new javax.swing.JTextField();
-        JTxtCidadeBataglin = new javax.swing.JTextField();
-        JTxtEstadoBataglin = new javax.swing.JTextField();
-        JLblCPFBataglin = new javax.swing.JLabel();
-        JLblEnderecoBataglin = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
         JTxtRuaBataglin = new javax.swing.JTextField();
         JFmtNumeroBataglin = new javax.swing.JFormattedTextField();
         JFmtCEPBataglin = new javax.swing.JFormattedTextField();
+        JLblNomeBataglin = new javax.swing.JLabel();
+        JFmtCNPJBataglin = new javax.swing.JFormattedTextField();
+        JLblCEPBataglin = new javax.swing.JLabel();
         JFmtCPFBataglin = new javax.swing.JFormattedTextField();
-        JFmtRGBataglin = new javax.swing.JFormattedTextField();
-        JFmtDataNascBataglin = new javax.swing.JFormattedTextField();
-        JTxtSexoBataglin = new javax.swing.JTextField();
-        JFmtTelefoneBataglin = new javax.swing.JFormattedTextField();
+        JLblCidadeBataglin = new javax.swing.JLabel();
+        JFmtTipoPesBataglin = new javax.swing.JFormattedTextField();
+        JLblBairroBataglin = new javax.swing.JLabel();
+        JLblCPFBataglin = new javax.swing.JLabel();
+        JFmtTelefoneBatatglin = new javax.swing.JFormattedTextField();
+        JLblEmailBataglin = new javax.swing.JLabel();
         JPwfSenhaBataglin = new javax.swing.JPasswordField();
+        JLblTelefoneBataglin = new javax.swing.JLabel();
+        JLblEstadoBataglin = new javax.swing.JLabel();
+        JLblRuaBataglin = new javax.swing.JLabel();
         JBtnIncluirBataglin = new javax.swing.JButton();
+        JLblTipoPesBataglin = new javax.swing.JLabel();
         JBtnExcluirBataglin = new javax.swing.JButton();
+        JLblSexoBataglin = new javax.swing.JLabel();
         JBtnAlterarBataglin = new javax.swing.JButton();
+        JLblSenhaBataglin = new javax.swing.JLabel();
         JBtnCancelarBataglin = new javax.swing.JButton();
+        JTxtNomeEmpBataglin = new javax.swing.JTextField();
         JBtnConfirmarBataglin = new javax.swing.JButton();
-        JLblCodigoBataglin = new javax.swing.JLabel();
+        JTxtEmailBataglin = new javax.swing.JTextField();
+        JTxtBairroBataglin = new javax.swing.JTextField();
         JTxtCodigoBataglin = new javax.swing.JTextField();
+        JLblCodigoBataglin = new javax.swing.JLabel();
+        JTxtCidadeBataglin = new javax.swing.JTextField();
+        JTxtEstadoBataglin = new javax.swing.JTextField();
+        JLblCNPJBataglin = new javax.swing.JLabel();
+        JLblEnderecoBataglin = new javax.swing.JLabel();
+        JCboTipoPagBataglin = new javax.swing.JComboBox<>();
         JChbAtivoBataglin1 = new javax.swing.JCheckBox();
 
-        jFormattedTextField1.setText("jFormattedTextField1");
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLabel2.setText("jLabel2");
-
-        jRadioButtonMenuItem1.setSelected(true);
-        jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
-
-        jLabel14.setText("jLabel14");
-
-        JCboAtivoBataglin.setText("Ativo");
-        JCboAtivoBataglin.addActionListener(new java.awt.event.ActionListener() {
+        JFmtNumeroBataglin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JCboAtivoBataglinActionPerformed(evt);
+                JFmtNumeroBataglinActionPerformed(evt);
             }
         });
 
-        jButton6.setText("jButton6");
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setBackground(new java.awt.Color(153, 204, 255));
-
-        JLblNomeBataglin.setText("Nome");
+        JLblNomeBataglin.setText("Nome Empresa");
 
         JLblCEPBataglin.setText("CEP");
 
@@ -100,7 +81,7 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
 
         JLblBairroBataglin.setText("Bairro");
 
-        JLblRGBataglin.setText("RG");
+        JLblCPFBataglin.setText("CPF");
 
         JLblEmailBataglin.setText("Email");
 
@@ -110,50 +91,22 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
 
         JLblRuaBataglin.setText("Rua");
 
-        JLblDataNascBataglin.setText("Data de Nascimento");
-
-        JLblSexoBataglin.setText("Sexo");
-
-        JLblSenhaBataglin.setText("Senha");
-
-        JTxtNomeBataglin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JTxtNomeBataglinActionPerformed(evt);
-            }
-        });
-
-        JTxtBairroBataglin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JTxtBairroBataglinActionPerformed(evt);
-            }
-        });
-
-        JTxtCidadeBataglin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JTxtCidadeBataglinActionPerformed(evt);
-            }
-        });
-
-        JLblCPFBataglin.setText("CPF");
-
-        JLblEnderecoBataglin.setText("Número");
-
-        JFmtNumeroBataglin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JFmtNumeroBataglinActionPerformed(evt);
-            }
-        });
-
         JBtnIncluirBataglin.setBackground(new java.awt.Color(168, 245, 252));
         JBtnIncluirBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         JBtnIncluirBataglin.setText("Incluir");
+
+        JLblTipoPesBataglin.setText("Tipo/Pessoa");
 
         JBtnExcluirBataglin.setBackground(new java.awt.Color(255, 102, 102));
         JBtnExcluirBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         JBtnExcluirBataglin.setText("Excluir");
 
+        JLblSexoBataglin.setText("Tipo/Pagamento");
+
         JBtnAlterarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         JBtnAlterarBataglin.setText("Alterar");
+
+        JLblSenhaBataglin.setText("Senha");
 
         JBtnCancelarBataglin.setBackground(new java.awt.Color(153, 204, 255));
         JBtnCancelarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
@@ -164,11 +117,35 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
             }
         });
 
+        JTxtNomeEmpBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JTxtNomeEmpBataglinActionPerformed(evt);
+            }
+        });
+
         JBtnConfirmarBataglin.setBackground(new java.awt.Color(0, 153, 51));
         JBtnConfirmarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         JBtnConfirmarBataglin.setText("Confirmar");
 
+        JTxtBairroBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JTxtBairroBataglinActionPerformed(evt);
+            }
+        });
+
         JLblCodigoBataglin.setText("Código");
+
+        JTxtCidadeBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JTxtCidadeBataglinActionPerformed(evt);
+            }
+        });
+
+        JLblCNPJBataglin.setText("CNPJ");
+
+        JLblEnderecoBataglin.setText("Número");
+
+        JCboTipoPagBataglin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         JChbAtivoBataglin1.setText("Ativo");
 
@@ -183,10 +160,10 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(JLblNomeBataglin)
                             .addComponent(JLblCEPBataglin)
-                            .addComponent(JLblCPFBataglin)
+                            .addComponent(JLblCNPJBataglin)
                             .addComponent(JFmtCEPBataglin, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
-                            .addComponent(JFmtCPFBataglin)
-                            .addComponent(JTxtNomeBataglin))
+                            .addComponent(JFmtCNPJBataglin)
+                            .addComponent(JTxtNomeEmpBataglin))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -196,70 +173,65 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(JLblTelefoneBataglin)
-                                    .addComponent(JFmtTelefoneBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(JFmtTelefoneBatatglin, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(JFmtRGBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(JLblRGBataglin))
+                                    .addComponent(JFmtCPFBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(JLblCPFBataglin))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(JLblDataNascBataglin)
-                                    .addComponent(JFmtDataNascBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(JLblTipoPesBataglin)
+                                    .addComponent(JFmtTipoPesBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(JLblSexoBataglin)
-                                    .addComponent(JTxtSexoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(JCboTipoPagBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(JTxtEstadoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(JLblBairroBataglin)
-                                            .addComponent(JTxtBairroBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(JLblEstadoBataglin))
+                                    .addComponent(JLblEstadoBataglin)
+                                    .addComponent(JTxtEstadoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(JTxtCidadeBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(JTxtRuaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(JLblRuaBataglin)))
+                                    .addComponent(JLblBairroBataglin)
+                                    .addComponent(JTxtBairroBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(JTxtCidadeBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(JLblCidadeBataglin))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(JFmtNumeroBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(JLblEnderecoBataglin))))
+                                    .addComponent(JTxtRuaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(JLblRuaBataglin))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(JLblEnderecoBataglin)
+                                    .addComponent(JFmtNumeroBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(JBtnIncluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(JBtnExcluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(JBtnAlterarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(JBtnCancelarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, Short.MAX_VALUE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(49, 49, 49)
-                                    .addComponent(JLblCodigoBataglin)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(JLblSenhaBataglin)
-                                    .addGap(256, 256, 256)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(24, 24, 24)
-                                .addComponent(JTxtCodigoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(49, 49, 49)
+                                .addComponent(JLblCodigoBataglin)
+                                .addGap(275, 275, 275)
+                                .addComponent(JLblSenhaBataglin))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(JBtnIncluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(JBtnExcluirBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(JBtnAlterarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(JBtnCancelarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(25, 25, 25)
+                                .addComponent(JTxtCodigoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(87, 87, 87)
-                                .addComponent(JPwfSenhaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(110, 110, 110)))
+                                .addComponent(JPwfSenhaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(JChbAtivoBataglin1)
                             .addComponent(JBtnConfirmarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap(30, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -271,40 +243,40 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
                     .addComponent(JLblTelefoneBataglin))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JTxtNomeBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JTxtNomeEmpBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JTxtEmailBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JFmtTelefoneBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JFmtTelefoneBatatglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(JLblCPFBataglin)
-                        .addComponent(JLblRGBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(JLblCNPJBataglin)
+                        .addComponent(JLblCPFBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(JLblDataNascBataglin)
+                        .addComponent(JLblTipoPesBataglin)
                         .addComponent(JLblSexoBataglin)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JTxtSexoBataglin)
-                    .addComponent(JFmtDataNascBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JFmtRGBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JFmtCPFBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(JFmtCNPJBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JFmtCPFBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JFmtTipoPesBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JCboTipoPagBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JLblCEPBataglin)
                     .addComponent(JLblEstadoBataglin)
                     .addComponent(JLblBairroBataglin)
-                    .addComponent(JLblCidadeBataglin)
                     .addComponent(JLblRuaBataglin)
-                    .addComponent(JLblEnderecoBataglin))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(JLblEnderecoBataglin)
+                    .addComponent(JLblCidadeBataglin))
+                .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(JFmtCEPBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JTxtCidadeBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JTxtEstadoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JTxtBairroBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JTxtCidadeBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JTxtRuaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JFmtNumeroBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(76, 76, 76)
+                    .addComponent(JFmtNumeroBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JFmtCEPBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(51, 51, 51)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JLblSenhaBataglin)
                     .addComponent(JLblCodigoBataglin))
@@ -313,7 +285,7 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
                     .addComponent(JPwfSenhaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JTxtCodigoBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JChbAtivoBataglin1))
-                .addGap(59, 59, 59)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JBtnIncluirBataglin)
                     .addComponent(JBtnExcluirBataglin)
@@ -326,22 +298,6 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void JTxtNomeBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTxtNomeBataglinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JTxtNomeBataglinActionPerformed
-
-    private void JTxtCidadeBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTxtCidadeBataglinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JTxtCidadeBataglinActionPerformed
-
-    private void JTxtBairroBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTxtBairroBataglinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JTxtBairroBataglinActionPerformed
-
-    private void JCboAtivoBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JCboAtivoBataglinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JCboAtivoBataglinActionPerformed
-
     private void JFmtNumeroBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JFmtNumeroBataglinActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_JFmtNumeroBataglinActionPerformed
@@ -349,6 +305,18 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
     private void JBtnCancelarBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBtnCancelarBataglinActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_JBtnCancelarBataglinActionPerformed
+
+    private void JTxtNomeEmpBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTxtNomeEmpBataglinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JTxtNomeEmpBataglinActionPerformed
+
+    private void JTxtBairroBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTxtBairroBataglinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JTxtBairroBataglinActionPerformed
+
+    private void JTxtCidadeBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTxtCidadeBataglinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JTxtCidadeBataglinActionPerformed
 
     /**
      * @param args the command line arguments
@@ -367,20 +335,20 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JDlgMcbCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JDlgMcbCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JDlgMcbCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JDlgMcbCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDlgMcbCliente dialog = new JDlgMcbCliente(new javax.swing.JFrame(), true);
+                JDlgFornecedor dialog = new JDlgFornecedor(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -398,43 +366,37 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
     private javax.swing.JButton JBtnConfirmarBataglin;
     private javax.swing.JButton JBtnExcluirBataglin;
     private javax.swing.JButton JBtnIncluirBataglin;
-    private javax.swing.JCheckBox JCboAtivoBataglin;
+    private javax.swing.JComboBox<String> JCboTipoPagBataglin;
     private javax.swing.JCheckBox JChbAtivoBataglin1;
     private javax.swing.JFormattedTextField JFmtCEPBataglin;
+    private javax.swing.JFormattedTextField JFmtCNPJBataglin;
     private javax.swing.JFormattedTextField JFmtCPFBataglin;
-    private javax.swing.JFormattedTextField JFmtDataNascBataglin;
     private javax.swing.JFormattedTextField JFmtNumeroBataglin;
-    private javax.swing.JFormattedTextField JFmtRGBataglin;
-    private javax.swing.JFormattedTextField JFmtTelefoneBataglin;
+    private javax.swing.JFormattedTextField JFmtTelefoneBatatglin;
+    private javax.swing.JFormattedTextField JFmtTipoPesBataglin;
     private javax.swing.JLabel JLblBairroBataglin;
     private javax.swing.JLabel JLblCEPBataglin;
+    private javax.swing.JLabel JLblCNPJBataglin;
     private javax.swing.JLabel JLblCPFBataglin;
     private javax.swing.JLabel JLblCidadeBataglin;
     private javax.swing.JLabel JLblCodigoBataglin;
-    private javax.swing.JLabel JLblDataNascBataglin;
     private javax.swing.JLabel JLblEmailBataglin;
     private javax.swing.JLabel JLblEnderecoBataglin;
     private javax.swing.JLabel JLblEstadoBataglin;
     private javax.swing.JLabel JLblNomeBataglin;
-    private javax.swing.JLabel JLblRGBataglin;
     private javax.swing.JLabel JLblRuaBataglin;
     private javax.swing.JLabel JLblSenhaBataglin;
     private javax.swing.JLabel JLblSexoBataglin;
     private javax.swing.JLabel JLblTelefoneBataglin;
+    private javax.swing.JLabel JLblTipoPesBataglin;
     private javax.swing.JPasswordField JPwfSenhaBataglin;
     private javax.swing.JTextField JTxtBairroBataglin;
     private javax.swing.JTextField JTxtCidadeBataglin;
     private javax.swing.JTextField JTxtCodigoBataglin;
     private javax.swing.JTextField JTxtEmailBataglin;
     private javax.swing.JTextField JTxtEstadoBataglin;
-    private javax.swing.JTextField JTxtNomeBataglin;
+    private javax.swing.JTextField JTxtNomeEmpBataglin;
     private javax.swing.JTextField JTxtRuaBataglin;
-    private javax.swing.JTextField JTxtSexoBataglin;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField8;
     // End of variables declaration//GEN-END:variables
 }

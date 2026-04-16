@@ -26,8 +26,8 @@ public class JFrmBataglin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        JMnuMenuBataglin = new javax.swing.JMenuBar();
+        JMnuCadastroBataglin = new javax.swing.JMenu();
         JChbUsuarioBataglin = new javax.swing.JCheckBoxMenuItem();
         JChbClienteBataglin = new javax.swing.JCheckBoxMenuItem();
         JChbFornecedorBataglin = new javax.swing.JCheckBoxMenuItem();
@@ -43,8 +43,15 @@ public class JFrmBataglin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("Cadastro");
+        JMnuCadastroBataglin.setBackground(new java.awt.Color(153, 204, 255));
+        JMnuCadastroBataglin.setText("Cadastro");
+        JMnuCadastroBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMnuCadastroBataglinActionPerformed(evt);
+            }
+        });
 
+        JChbUsuarioBataglin.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         JChbUsuarioBataglin.setSelected(true);
         JChbUsuarioBataglin.setText("Usuário");
         JChbUsuarioBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
@@ -53,8 +60,9 @@ public class JFrmBataglin extends javax.swing.JFrame {
                 JChbUsuarioBataglinActionPerformed(evt);
             }
         });
-        jMenu1.add(JChbUsuarioBataglin);
+        JMnuCadastroBataglin.add(JChbUsuarioBataglin);
 
+        JChbClienteBataglin.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         JChbClienteBataglin.setSelected(true);
         JChbClienteBataglin.setText("Cliente");
         JChbClienteBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
@@ -63,13 +71,20 @@ public class JFrmBataglin extends javax.swing.JFrame {
                 JChbClienteBataglinActionPerformed(evt);
             }
         });
-        jMenu1.add(JChbClienteBataglin);
+        JMnuCadastroBataglin.add(JChbClienteBataglin);
 
+        JChbFornecedorBataglin.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         JChbFornecedorBataglin.setSelected(true);
         JChbFornecedorBataglin.setText("Fornecedor");
         JChbFornecedorBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedor.png"))); // NOI18N
-        jMenu1.add(JChbFornecedorBataglin);
+        JChbFornecedorBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JChbFornecedorBataglinActionPerformed(evt);
+            }
+        });
+        JMnuCadastroBataglin.add(JChbFornecedorBataglin);
 
+        JChbProdutoBataglin.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         JChbProdutoBataglin.setSelected(true);
         JChbProdutoBataglin.setText("Produto");
         JChbProdutoBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Caderno espiral glossy de capa azul.png"))); // NOI18N
@@ -78,8 +93,9 @@ public class JFrmBataglin extends javax.swing.JFrame {
                 JChbProdutoBataglinActionPerformed(evt);
             }
         });
-        jMenu1.add(JChbProdutoBataglin);
+        JMnuCadastroBataglin.add(JChbProdutoBataglin);
 
+        JChbVendedorBataglin.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         JChbVendedorBataglin.setSelected(true);
         JChbVendedorBataglin.setText("Vendedor");
         JChbVendedorBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/categoria.png"))); // NOI18N
@@ -88,26 +104,22 @@ public class JFrmBataglin extends javax.swing.JFrame {
                 JChbVendedorBataglinActionPerformed(evt);
             }
         });
-        jMenu1.add(JChbVendedorBataglin);
-        jMenu1.add(jSeparator1);
+        JMnuCadastroBataglin.add(JChbVendedorBataglin);
+        JMnuCadastroBataglin.add(jSeparator1);
 
+        JChbSairBataglin.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         JChbSairBataglin.setSelected(true);
         JChbSairBataglin.setText("Sair");
         JChbSairBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit_1.png"))); // NOI18N
-        jMenu1.add(JChbSairBataglin);
+        JMnuCadastroBataglin.add(JChbSairBataglin);
 
-        jMenuBar1.add(jMenu1);
+        JMnuMenuBataglin.add(JMnuCadastroBataglin);
 
         jMenu2.setText("Movimento");
 
         JChbComprasBataglin.setSelected(true);
         JChbComprasBataglin.setText("Compras");
         JChbComprasBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/compras.png"))); // NOI18N
-        JChbComprasBataglin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JChbComprasBataglinActionPerformed(evt);
-            }
-        });
         jMenu2.add(JChbComprasBataglin);
 
         JChbVendasBataglin.setSelected(true);
@@ -125,9 +137,9 @@ public class JFrmBataglin extends javax.swing.JFrame {
         JChbVendas_ProdutoBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendas_produto.png"))); // NOI18N
         jMenu2.add(JChbVendas_ProdutoBataglin);
 
-        jMenuBar1.add(jMenu2);
+        JMnuMenuBataglin.add(jMenu2);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(JMnuMenuBataglin);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -143,25 +155,43 @@ public class JFrmBataglin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void JChbComprasBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbComprasBataglinActionPerformed
+    private void JMnuCadastroBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMnuCadastroBataglinActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_JChbComprasBataglinActionPerformed
+           
+        
+    }//GEN-LAST:event_JMnuCadastroBataglinActionPerformed
 
-    private void JChbVendedorBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbVendedorBataglinActionPerformed
+    private void JChbUsuarioBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbUsuarioBataglinActionPerformed
+        JDlgMcbUsuario jDlgMcbUsuario = new JDlgMcbUsuario(null, true);
+        jDlgMcbUsuario.setVisible(true);
         // TODO add your handling code here:
-    }//GEN-LAST:event_JChbVendedorBataglinActionPerformed
-
-    private void JChbProdutoBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbProdutoBataglinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JChbProdutoBataglinActionPerformed
+    }//GEN-LAST:event_JChbUsuarioBataglinActionPerformed
 
     private void JChbClienteBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbClienteBataglinActionPerformed
         // TODO add your handling code here:
+          JDlgMcbCliente jDlgMcbCliente = new JDlgMcbCliente(null, true);
+        jDlgMcbCliente.setVisible(true);
     }//GEN-LAST:event_JChbClienteBataglinActionPerformed
 
-    private void JChbUsuarioBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbUsuarioBataglinActionPerformed
+    private void JChbFornecedorBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbFornecedorBataglinActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_JChbUsuarioBataglinActionPerformed
+        JDlgFornecedor jDlgFornecedor = new JDlgFornecedor(null, true);
+        jDlgFornecedor.setVisible(true);
+        //Descobri agora que não coloquei Mcb no fornecedor.
+    }//GEN-LAST:event_JChbFornecedorBataglinActionPerformed
+
+    private void JChbProdutoBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbProdutoBataglinActionPerformed
+        // TODO add your handling code here:
+           JDlgMcbProduto jDlgMcbProduto = new JDlgMcbProduto(null, true);
+        jDlgMcbProduto.setVisible(true);
+    }//GEN-LAST:event_JChbProdutoBataglinActionPerformed
+
+    private void JChbVendedorBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JChbVendedorBataglinActionPerformed
+        // TODO add your handling code here:
+          JDlgMcbVendedor jDlgMcbVendedor = new JDlgMcbVendedor(null, true);
+        jDlgMcbVendedor.setVisible(true);
+        
+    }//GEN-LAST:event_JChbVendedorBataglinActionPerformed
 
     /**
      * @param args the command line arguments
@@ -209,9 +239,9 @@ public class JFrmBataglin extends javax.swing.JFrame {
     private javax.swing.JCheckBoxMenuItem JChbVendasBataglin;
     private javax.swing.JCheckBoxMenuItem JChbVendas_ProdutoBataglin;
     private javax.swing.JCheckBoxMenuItem JChbVendedorBataglin;
-    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu JMnuCadastroBataglin;
+    private javax.swing.JMenuBar JMnuMenuBataglin;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
