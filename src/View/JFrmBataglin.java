@@ -15,6 +15,8 @@ public class JFrmBataglin extends javax.swing.JFrame {
      */
     public JFrmBataglin() {
         initComponents();
+        setTitle("Material Escolar da Mika");
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
