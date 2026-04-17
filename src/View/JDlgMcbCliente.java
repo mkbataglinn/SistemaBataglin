@@ -4,6 +4,8 @@
  */
 package View;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author u07788816108
@@ -23,6 +25,10 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
 
         public void habilitar(boolean valor) {
         jTxtNomeBataglin.setEnabled(valor);
+        jTxtEmailBataglin.setEnabled(valor);
+        jFmtNumeroBataglin.setEnabled(valor);
+        jFmtTelefoneBataglin.setEnabled(valor);
+        jTxtRuaBataglin.setEnabled(valor);
         jFmtCPFBataglin.setEnabled(valor);
         jTxtSexoBataglin.setEnabled(valor);
         jFmtDataNascBataglin.setEnabled(valor);
@@ -140,44 +146,35 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
 
         JLblSenhaBataglin.setText("Senha");
 
-        jTxtNomeBataglin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtNomeBataglinActionPerformed(evt);
-            }
-        });
-
-        jTxtBairroBataglin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtBairroBataglinActionPerformed(evt);
-            }
-        });
-
-        jTxtCidadeBataglin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtCidadeBataglinActionPerformed(evt);
-            }
-        });
-
         JLblCPFBataglin.setText("CPF");
 
         JLblEnderecoBataglin.setText("Número");
 
-        jFmtNumeroBataglin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFmtNumeroBataglinActionPerformed(evt);
-            }
-        });
-
         jBtnIncluirBataglin.setBackground(new java.awt.Color(168, 245, 252));
         jBtnIncluirBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         jBtnIncluirBataglin.setText("Incluir");
+        jBtnIncluirBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnIncluirBataglinActionPerformed(evt);
+            }
+        });
 
         jBtnExcluirBataglin.setBackground(new java.awt.Color(255, 102, 102));
         jBtnExcluirBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jBtnExcluirBataglin.setText("Excluir");
+        jBtnExcluirBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnExcluirBataglinActionPerformed(evt);
+            }
+        });
 
         jBtnAlterarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         jBtnAlterarBataglin.setText("Alterar");
+        jBtnAlterarBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnAlterarBataglinActionPerformed(evt);
+            }
+        });
 
         jBtnCancelarBataglin.setBackground(new java.awt.Color(153, 204, 255));
         jBtnCancelarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
@@ -191,6 +188,11 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
         jBtnConfirmarBataglin.setBackground(new java.awt.Color(0, 153, 51));
         jBtnConfirmarBataglin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         jBtnConfirmarBataglin.setText("Confirmar");
+        jBtnConfirmarBataglin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnConfirmarBataglinActionPerformed(evt);
+            }
+        });
 
         JLblCodigoBataglin.setText("Código");
 
@@ -281,8 +283,8 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
                                 .addComponent(jPwfSenhaBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(110, 110, 110)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jChbAtivoBataglin1)
-                            .addComponent(jBtnConfirmarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jBtnConfirmarBataglin, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jChbAtivoBataglin1))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -350,29 +352,36 @@ public class JDlgMcbCliente extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtNomeBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtNomeBataglinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtNomeBataglinActionPerformed
-
-    private void jTxtCidadeBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtCidadeBataglinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtCidadeBataglinActionPerformed
-
-    private void jTxtBairroBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtBairroBataglinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtBairroBataglinActionPerformed
-
     private void JCboAtivoBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JCboAtivoBataglinActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_JCboAtivoBataglinActionPerformed
 
-    private void jFmtNumeroBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtNumeroBataglinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFmtNumeroBataglinActionPerformed
-
     private void jBtnCancelarBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarBataglinActionPerformed
         // TODO add your handling code here:
+         habilitar(false);
     }//GEN-LAST:event_jBtnCancelarBataglinActionPerformed
+
+    private void jBtnExcluirBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirBataglinActionPerformed
+        // TODO add your handling code here:
+         JOptionPane.showConfirmDialog(null, "Tem certeza que deseja continuar? Essa ação não pode ser desfeita",
+"Excluir registro", JOptionPane.YES_NO_OPTION);
+                                                    
+    }//GEN-LAST:event_jBtnExcluirBataglinActionPerformed
+
+    private void jBtnIncluirBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirBataglinActionPerformed
+        // TODO add your handling code here:
+         habilitar(true);
+    }//GEN-LAST:event_jBtnIncluirBataglinActionPerformed
+
+    private void jBtnAlterarBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarBataglinActionPerformed
+        // TODO add your handling code here:
+          habilitar(true);
+    }//GEN-LAST:event_jBtnAlterarBataglinActionPerformed
+
+    private void jBtnConfirmarBataglinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarBataglinActionPerformed
+        // TODO add your handling code here:
+         habilitar(false);
+    }//GEN-LAST:event_jBtnConfirmarBataglinActionPerformed
 
     /**
      * @param args the command line arguments
