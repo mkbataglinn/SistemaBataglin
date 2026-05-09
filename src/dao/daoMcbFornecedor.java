@@ -4,7 +4,7 @@
  */
 package dao;
 
-import bean.McbCliente;
+import bean.McbFornecedor;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -16,11 +16,11 @@ import java.util.logging.Logger;
  *
  * @author 07788816108
  */
-public class daoMcbCliente extends daoAbstract {
+public class daoMcbFornecedor extends daoAbstract {
 
     @Override
     public void insert(Object object) {
-        McbCliente mcbCliente = new McbCliente ();
+        McbFornecedor mcbFornecedor = new McbFornecedor ();
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -35,36 +35,36 @@ public class daoMcbCliente extends daoAbstract {
 
             cnt = DriverManager.getConnection(url, user, password);
 
-            String sql = "insert into mcb_cliente values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            String sql = "insert into mcb_fornecedor values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
             PreparedStatement pst = cnt.prepareStatement(sql);
 
-            pst.setInt(1, mcbCliente.getMcbIdCliente());
-            pst.setString(2, mcbCliente.getMcbNome());
-            pst.setString(3, mcbCliente.getMcbBairro());
-            pst.setString(4, mcbCliente.getMcbCpf());
-            pst.setString (5, mcbCliente.getMcbDataNascimento());
-            pst.setString(6, mcbCliente.getMcbCep());
-            pst.setString(6, mcbCliente.getMcbCidade());
-            pst.setString(7, mcbCliente.getMcbEmail());
-            pst.setString(8, mcbCliente.getMcbEndereco());
-            pst.setString(9, mcbCliente.getMcbEstado());
-            pst.setString(10, mcbCliente.getMcbRg());
-            pst.setString(11, mcbCliente.getMcbSenha());
-            pst.setString (12, mcbCliente.getMcbStatus());
-            pst.setString(13, mcbCliente.getMcbTelefone());
-            pst.setString(14, mcbCliente.getMcbTipoCliente());
+            pst.setInt(1, mcbFornecedor.getMcbIdFornecedor());
+            pst.setString(2, mcbFornecedor.getMcbNome());
+            pst.setString(3, mcbFornecedor.getMcbBairro());
+            pst.setString(4, mcbFornecedor.getMcbCpf());
+            pst.setString (5, mcbFornecedor.getMcbDataNascimento());
+            pst.setString(6, mcbFornecedor.getMcbCep());
+            pst.setString(6, mcbFornecedor.getMcbCidade());
+            pst.setString(7, mcbFornecedor.getMcbEmail());
+            pst.setString(8, mcbFornecedor.getMcbEndereco());
+            pst.setString(9, mcbFornecedor.getMcbEstado());
+            pst.setString(10, mcbFornecedor.getMcbRg());
+            pst.setString(11, mcbFornecedor.getMcbSenha());
+            pst.setString (12, mcbFornecedor.getMcbStatus());
+            pst.setString(13, mcbFornecedor.getMcbTelefone());
+            pst.setString(14, mcbFornecedor.getMcbTipoFornecedor());
         
 
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
 
-            Logger.getLogger(daoMcbCliente.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(daoMcbFornecedor.class.getName()).log(Level.SEVERE, null, ex);
 
         } catch (SQLException ex) {
 
-            Logger.getLogger(daoMcbCliente.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(daoMcbFornecedor.class.getName()).log(Level.SEVERE, null, ex);
 
         }
 

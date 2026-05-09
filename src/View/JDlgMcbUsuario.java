@@ -325,7 +325,8 @@ public class JDlgMcbUsuario extends javax.swing.JDialog {
                 });
                 dialog.setVisible(true);
             }
-        });
+   
+     });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
