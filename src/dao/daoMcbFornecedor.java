@@ -40,20 +40,20 @@ public class daoMcbFornecedor extends daoAbstract {
             PreparedStatement pst = cnt.prepareStatement(sql);
 
             pst.setInt(1, mcbFornecedor.getMcbIdFornecedor());
-            pst.setString(2, mcbFornecedor.getMcbNome());
-            pst.setString(3, mcbFornecedor.getMcbBairro());
-            pst.setString(4, mcbFornecedor.getMcbCpf());
-            pst.setString (5, mcbFornecedor.getMcbDataNascimento());
-            pst.setString(6, mcbFornecedor.getMcbCep());
-            pst.setString(6, mcbFornecedor.getMcbCidade());
-            pst.setString(7, mcbFornecedor.getMcbEmail());
-            pst.setString(8, mcbFornecedor.getMcbEndereco());
-            pst.setString(9, mcbFornecedor.getMcbEstado());
-            pst.setString(10, mcbFornecedor.getMcbRg());
-            pst.setString(11, mcbFornecedor.getMcbSenha());
-            pst.setString (12, mcbFornecedor.getMcbStatus());
-            pst.setString(13, mcbFornecedor.getMcbTelefone());
-            pst.setString(14, mcbFornecedor.getMcbTipoFornecedor());
+            pst.setString(2, mcbFornecedor.getMcbTipoPessoa());
+            pst.setString(3, mcbFornecedor.getMcbDocumento());
+            pst.setString(4, mcbFornecedor.getMcbNomeEmpresa());
+            pst.setString(5, mcbFornecedor.getMcbNomeContato());
+            pst.setString(6, mcbFornecedor.getMcbEmail());
+            pst.setString(7, mcbFornecedor.getMcbCelular());
+            pst.setString(8, mcbFornecedor.getMcbTelefone());
+            pst.setString(9, mcbFornecedor.getMcbEndereco());
+            pst.setString(10, mcbFornecedor.getMcbCep());
+            pst.setString(11, mcbFornecedor.getMcbTipoPagamento());
+            pst.setString(12, mcbFornecedor.getMcbBairro());
+            pst.setString(13, mcbFornecedor.getMcbCidade());
+            pst.setString(14, mcbFornecedor.getMcbEstado());
+            pst.setString(15, mcbFornecedor.getMcbStatus());
         
 
             pst.executeUpdate();

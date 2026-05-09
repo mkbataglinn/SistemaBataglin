@@ -18,6 +18,7 @@ public class JDlgMcbLogin extends javax.swing.JDialog {
     public JDlgMcbLogin(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Login");
     }
 
     
@@ -31,12 +32,14 @@ public class JDlgMcbLogin extends javax.swing.JDialog {
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
+        jFmtMcbUsuario = new javax.swing.JFormattedTextField();
         jLabel1 = new javax.swing.JLabel();
-        jBtnMcbConfirmar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPwfMcbSenha = new javax.swing.JPasswordField();
-        jFmtMcbUsuario = new javax.swing.JFormattedTextField();
+        jBtnMcbConfirmar = new javax.swing.JButton();
+        jBtnMcbCancelar = new javax.swing.JButton();
+        jTxtMcbUsuario = new javax.swing.JTextField();
 
         jTextField1.setText("jTextField1");
 
@@ -45,34 +48,38 @@ public class JDlgMcbLogin extends javax.swing.JDialog {
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 0, 48)); // NOI18N
         jLabel1.setText("Login");
 
-        jBtnMcbConfirmar.setBackground(new java.awt.Color(0, 204, 0));
-        jBtnMcbConfirmar.setForeground(new java.awt.Color(255, 255, 255));
-        jBtnMcbConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
-        jBtnMcbConfirmar.setText("Confirmar");
-        jBtnMcbConfirmar.addActionListener(this::jBtnMcbConfirmarActionPerformed);
-
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel2.setText("Usuário");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel3.setText("Senha");
 
+        jBtnMcbConfirmar.setBackground(new java.awt.Color(51, 204, 0));
+        jBtnMcbConfirmar.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jBtnMcbConfirmar.setText("Confirmar");
+        jBtnMcbConfirmar.addActionListener(this::jBtnMcbConfirmarActionPerformed);
+
+        jBtnMcbCancelar.setBackground(new java.awt.Color(255, 0, 51));
+        jBtnMcbCancelar.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jBtnMcbCancelar.setText("Cancelar");
+        jBtnMcbCancelar.addActionListener(this::jBtnMcbCancelarActionPerformed);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(224, Short.MAX_VALUE)
+                .addGap(283, 283, 283)
+                .addComponent(jBtnMcbConfirmar)
+                .addGap(18, 18, 18)
+                .addComponent(jBtnMcbCancelar)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(218, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jPwfMcbSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(228, 228, 228))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jFmtMcbUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(199, 199, 199))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(286, 286, 286))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(338, 338, 338))
@@ -80,24 +87,29 @@ public class JDlgMcbLogin extends javax.swing.JDialog {
                         .addComponent(jLabel2)
                         .addGap(329, 329, 329))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jBtnMcbConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(273, 273, 273))))
+                        .addComponent(jLabel1)
+                        .addGap(285, 285, 285))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jTxtMcbUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(195, 195, 195))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(44, 44, 44)
+                .addContainerGap(61, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addGap(46, 46, 46)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jFmtMcbUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTxtMcbUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPwfMcbSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64)
-                .addComponent(jBtnMcbConfirmar)
+                .addGap(80, 80, 80)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBtnMcbConfirmar)
+                    .addComponent(jBtnMcbCancelar))
                 .addGap(52, 52, 52))
         );
 
@@ -106,7 +118,9 @@ public class JDlgMcbLogin extends javax.swing.JDialog {
 
     private void jBtnMcbConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMcbConfirmarActionPerformed
         // TODO add your handling code here:
-        if (jFmtMcbUsuario.getText().equals("Bataglin")
+        
+        
+        if (jTxtMcbUsuario.getText().equals("Bataglin")
                 && String.valueOf(jPwfMcbSenha.getPassword()).equals("123456")) {
 
             JFrmBataglin jFrmBataglin = new JFrmBataglin();
@@ -118,11 +132,16 @@ public class JDlgMcbLogin extends javax.swing.JDialog {
 
             javax.swing.JOptionPane.showMessageDialog(
                     null,
-                    "E-mail ou senha erradas"
+                    "Usuário ou senha erradas"
             );
 
         }
     }//GEN-LAST:event_jBtnMcbConfirmarActionPerformed
+
+    private void jBtnMcbCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMcbCancelarActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jBtnMcbCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,6 +181,7 @@ public class JDlgMcbLogin extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBtnMcbCancelar;
     private javax.swing.JButton jBtnMcbConfirmar;
     private javax.swing.JFormattedTextField jFmtMcbUsuario;
     private javax.swing.JLabel jLabel1;
@@ -169,5 +189,6 @@ public class JDlgMcbLogin extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPasswordField jPwfMcbSenha;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTxtMcbUsuario;
     // End of variables declaration//GEN-END:variables
 }

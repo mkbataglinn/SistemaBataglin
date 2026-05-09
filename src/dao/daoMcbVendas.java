@@ -4,10 +4,77 @@
  */
 package dao;
 
+import bean.McbVendas;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
- * @author Mikaela
+ * @author 07788816108
  */
-public class daoMcbVendas {
-    
+public class daoMcbVendas extends daoAbstract {
+
+    @Override
+    public void insert(Object object) {
+        McbVendas mcbVendas = new McbVendas ();
+        try {
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            String url, user, password;
+
+            url = "jdbc:mysql://10.7.0.51:33062/db_mikaela_bataglin";
+            user = "mikaela_bataglin";
+            password = "mikaela_bataglin";
+
+            Connection cnt;
+
+            cnt = DriverManager.getConnection(url, user, password);
+
+            String sql = "insert into mcb_vendas values (?,?,?,?,?,?,?)";
+
+            PreparedStatement pst = cnt.prepareStatement(sql);
+
+            pst.setInt(1, mcbVendas.getMcbIdVendas());
+            pst.setInt(2, mcbVendas.getMcbIdProduto());
+            pst.setInt(3, mcbVendas.getMcbIdCliente());
+            pst.setInt(4, mcbVendas.getMcbIdvendedor());
+            pst.setInt(5, mcbVendas.getMcbQuantidade());
+            pst.setDouble(6, mcbVendas.getMcbValorUnitario());
+            pst.setDouble(7, mcbVendas.getMcbDesconto());
+            pst.setString(8, mcbVendas.getMcbData());
+            pst.setString(9, mcbVendas.getMcbPagamento());
+        
+
+            pst.executeUpdate();
+
+        } catch (ClassNotFoundException ex) {
+
+            Logger.getLogger(daoMcbVendas.class.getName()).log(Level.SEVERE, null, ex);
+
+        } catch (SQLException ex) {
+
+            Logger.getLogger(daoMcbVendas.class.getName()).log(Level.SEVERE, null, ex);
+
+        }
+
+    }
+
+    @Override
+    public Object list(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public Object listAll() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }
+
+
+

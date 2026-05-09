@@ -53,7 +53,6 @@ public class JFrmBataglin extends javax.swing.JFrame {
         });
         JMnuMcbCadastro.add(jSeparator1);
 
-        jMnuMcbUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jMnuMcbUsuario.setText("Usuários");
         jMnuMcbUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,7 +61,6 @@ public class JFrmBataglin extends javax.swing.JFrame {
         });
         JMnuMcbCadastro.add(jMnuMcbUsuario);
 
-        jMnuMcbFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedor.png"))); // NOI18N
         jMnuMcbFornecedor.setText("Fornecedor");
         jMnuMcbFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,7 +69,6 @@ public class JFrmBataglin extends javax.swing.JFrame {
         });
         JMnuMcbCadastro.add(jMnuMcbFornecedor);
 
-        jMnuMcbCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
         jMnuMcbCliente.setText("Cliente");
         jMnuMcbCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,7 +77,6 @@ public class JFrmBataglin extends javax.swing.JFrame {
         });
         JMnuMcbCadastro.add(jMnuMcbCliente);
 
-        jMnuMcbVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendas.png"))); // NOI18N
         jMnuMcbVendedor.setText("Vendedor");
         jMnuMcbVendedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,7 +85,6 @@ public class JFrmBataglin extends javax.swing.JFrame {
         });
         JMnuMcbCadastro.add(jMnuMcbVendedor);
 
-        jMnuMcbProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/compras.png"))); // NOI18N
         jMnuMcbProduto.setText("Produto");
         jMnuMcbProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,7 +94,6 @@ public class JFrmBataglin extends javax.swing.JFrame {
         JMnuMcbCadastro.add(jMnuMcbProduto);
         JMnuMcbCadastro.add(jSeparator2);
 
-        jMnuMcbSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); // NOI18N
         jMnuMcbSair.setText("Sair");
         JMnuMcbCadastro.add(jMnuMcbSair);
 
@@ -107,7 +101,6 @@ public class JFrmBataglin extends javax.swing.JFrame {
 
         jMnuMcbMovimento.setText("Movimento");
 
-        jMnuMcbCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/comprasproduto.png"))); // NOI18N
         jMnuMcbCompras.setText("Compras");
         jMnuMcbCompras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,7 +109,6 @@ public class JFrmBataglin extends javax.swing.JFrame {
         });
         jMnuMcbMovimento.add(jMnuMcbCompras);
 
-        jMnuMcbVendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendas_produto.png"))); // NOI18N
         jMnuMcbVendas.setText("Vendas");
         jMnuMcbMovimento.add(jMnuMcbVendas);
 
