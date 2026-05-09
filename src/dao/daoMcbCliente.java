@@ -4,8 +4,7 @@
  */
 package dao;
 
-
-import bean.McbUsuarios;
+import bean.McbCliente;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -15,16 +14,13 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author u07788816108
+ * @author 07788816108
  */
-
-public class daoMcbUsuario extends daoAbstract {
+public class daoMcbCliente extends daoAbstract {
 
     @Override
     public void insert(Object object) {
-
-        McbUsuarios mcbUsuarios = (McbUsuarios) object;
-
+        McbCliente mcbCliente = new McbCliente ();
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -39,18 +35,18 @@ public class daoMcbUsuario extends daoAbstract {
 
             cnt = DriverManager.getConnection(url, user, password);
 
-            String sql = "insert into mcb_usuarios values (?,?,?,?,?,?,?,?)";
+            String sql = "insert into mcb_cliente values (?,?,?,?,?,?,?,?)";
 
             PreparedStatement pst = cnt.prepareStatement(sql);
 
-            pst.setInt(1, mcbUsuarios.getMcbIdUsuarios());
-            pst.setString(2, mcbUsuarios.getMcbNome());
-            pst.setString(3, mcbUsuarios.getMcbApelido());
-            pst.setString(4, mcbUsuarios.getMcbCpf());
+            pst.setInt(1, mcbCliente.getMcbIdCliente());
+            pst.setString(2, mcbCliente.getMcbNome());
+            pst.setString(3, mcbCliente.getMcbApelido());
+            pst.setString(4, mcbCliente.getMcbCpf());
             pst.setDate(5, null);
-            pst.setInt(6, mcbUsuarios.getMcbNivel());
-            pst.setString(7, mcbUsuarios.getMcbSenha());
-            pst.setString(8, mcbUsuarios.getMcbAtivo());
+            pst.setInt(6, mcbCliente.getMcbNivel());
+            pst.setString(7, mcbCliente.getMcbSenha());
+            pst.setString(8, mcbCliente.getMcbAtivo());
 
             pst.executeUpdate();
 
@@ -66,20 +62,14 @@ public class daoMcbUsuario extends daoAbstract {
 
     }
 
-
     @Override
     public Object list(int id) {
-
-        return null;
-
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
     public Object listAll() {
-
-        return null;
-
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }
-
