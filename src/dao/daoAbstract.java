@@ -1,0 +1,16 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package dao;
+
+/**
+ *
+ * @author u07788816108
+ */
+public abstract class daoAbstract {
+public abstract void insert(Object object);
+public abstract Object list(int id);
+public abstract Object listAll();
+
+}
