@@ -20,7 +20,9 @@ public class daoMcbVendasProduto extends daoAbstract {
 
     @Override
     public void insert(Object object) {
-        McbVendasProduto mcbVendasProduto = new McbVendasProduto ();
+
+        McbVendasProduto mcbVendasProduto = (McbVendasProduto) object;
+
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -51,28 +53,27 @@ public class daoMcbVendasProduto extends daoAbstract {
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
-
             Logger.getLogger(daoMcbVendasProduto.class.getName()).log(Level.SEVERE, null, ex);
-
         } catch (SQLException ex) {
-
             Logger.getLogger(daoMcbVendasProduto.class.getName()).log(Level.SEVERE, null, ex);
-
         }
-
     }
-
     @Override
     public Object list(int id) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    @Override
+    public Object listAll() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void delete(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public Object listAll() {
+    public void update(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
 }
-
-
-

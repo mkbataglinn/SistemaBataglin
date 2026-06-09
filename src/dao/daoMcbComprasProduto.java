@@ -20,7 +20,9 @@ public class daoMcbComprasProduto extends daoAbstract {
 
     @Override
     public void insert(Object object) {
-        McbComprasProduto mcbComprasProduto = new McbComprasProduto ();
+
+        McbComprasProduto mcbComprasProduto = (McbComprasProduto) object;
+
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -39,40 +41,39 @@ public class daoMcbComprasProduto extends daoAbstract {
 
             PreparedStatement pst = cnt.prepareStatement(sql);
 
-           pst.setInt(1, mcbComprasProduto.getMcbIdComprasProdutos());
-           pst.setInt(2, mcbComprasProduto.getMcbIdCompras());
-           pst.setInt(3, mcbComprasProduto.getMcbIdProdutos());
-           pst.setInt(4, mcbComprasProduto.getMcbIdFornecedor());
-           pst.setInt(5, mcbComprasProduto.getMcbQuantidade());
-           pst.setDouble(6, mcbComprasProduto.getMcbValorUnitario());
-           pst.setDouble(7, mcbComprasProduto.getMcbDesconto());
-           pst.setDouble(8, mcbComprasProduto.getMcbSubtotal());
+            pst.setInt(1, mcbComprasProduto.getMcbIdComprasProdutos());
+            pst.setInt(2, mcbComprasProduto.getMcbIdCompras());
+            pst.setInt(3, mcbComprasProduto.getMcbIdProdutos());
+            pst.setInt(4, mcbComprasProduto.getMcbIdFornecedor());
+            pst.setInt(5, mcbComprasProduto.getMcbQuantidade());
+            pst.setDouble(6, mcbComprasProduto.getMcbValorUnitario());
+            pst.setDouble(7, mcbComprasProduto.getMcbDesconto());
+            pst.setDouble(8, mcbComprasProduto.getMcbSubtotal());
 
-           pst.executeUpdate();
+            pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
-
             Logger.getLogger(daoMcbComprasProduto.class.getName()).log(Level.SEVERE, null, ex);
-
         } catch (SQLException ex) {
-
             Logger.getLogger(daoMcbComprasProduto.class.getName()).log(Level.SEVERE, null, ex);
-
         }
-
     }
-
     @Override
     public Object list(int id) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    @Override
+    public Object listAll() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void delete(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public Object listAll() {
+    public void update(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
 }
-
-
-

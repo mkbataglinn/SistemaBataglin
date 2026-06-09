@@ -4,7 +4,6 @@
  */
 package dao;
 
-
 import bean.McbUsuarios;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -47,39 +46,35 @@ public class daoMcbUsuario extends daoAbstract {
             pst.setString(2, mcbUsuarios.getMcbNome());
             pst.setString(3, mcbUsuarios.getMcbApelido());
             pst.setString(4, mcbUsuarios.getMcbCpf());
-            pst.setDate(5, null);
-            pst.setInt(6, mcbUsuarios.getMcbNivel());
-            pst.setString(7, mcbUsuarios.getMcbSenha());
+            pst.setInt(5, mcbUsuarios.getMcbNivel());
+            pst.setString(6, mcbUsuarios.getMcbSenha());
+            pst.setString(7, mcbUsuarios.getMcbAtivo());
             pst.setString(8, mcbUsuarios.getMcbAtivo());
 
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
-
             Logger.getLogger(daoMcbUsuario.class.getName()).log(Level.SEVERE, null, ex);
-
         } catch (SQLException ex) {
-
             Logger.getLogger(daoMcbUsuario.class.getName()).log(Level.SEVERE, null, ex);
-
         }
-
     }
-
 
     @Override
     public Object list(int id) {
-
         return null;
-
     }
 
     @Override
     public Object listAll() {
-
         return null;
-
     }
-
+    @Override
+    public void delete(Object object) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    @Override
+    public void update(Object object) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
-

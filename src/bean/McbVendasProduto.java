@@ -82,5 +82,4 @@ public class McbVendasProduto {
     public void setMcbSubtotal(Double mcbSubtotal) {
         this.mcbSubtotal = mcbSubtotal;
     }
-
 }

@@ -20,7 +20,9 @@ public class daoMcbCompras extends daoAbstract {
 
     @Override
     public void insert(Object object) {
-        McbCompras mcbCompras = new McbCompras ();
+
+        McbCompras mcbCompras = (McbCompras) object;
+
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -46,32 +48,32 @@ public class daoMcbCompras extends daoAbstract {
             pst.setDouble(5, mcbCompras.getMcbValorTotal());
             pst.setString(6, mcbCompras.getMcbStatus());
             pst.setString(7, mcbCompras.getMcbData());
-        
 
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
-
             Logger.getLogger(daoMcbCompras.class.getName()).log(Level.SEVERE, null, ex);
-
         } catch (SQLException ex) {
-
             Logger.getLogger(daoMcbCompras.class.getName()).log(Level.SEVERE, null, ex);
-
         }
-
     }
-
     @Override
     public Object list(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public Object listAll() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void delete(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
+    @Override
+    public void update(Object object) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
-
-

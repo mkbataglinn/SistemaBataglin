@@ -20,7 +20,9 @@ public class daoMcbVendas extends daoAbstract {
 
     @Override
     public void insert(Object object) {
-        McbVendas mcbVendas = new McbVendas ();
+
+        McbVendas mcbVendas = (McbVendas) object;
+
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -35,7 +37,7 @@ public class daoMcbVendas extends daoAbstract {
 
             cnt = DriverManager.getConnection(url, user, password);
 
-            String sql = "insert into mcb_vendas values (?,?,?,?,?,?,?)";
+            String sql = "insert into mcb_vendas values (?,?,?,?,?,?,?,?,?)";
 
             PreparedStatement pst = cnt.prepareStatement(sql);
 
@@ -48,33 +50,33 @@ public class daoMcbVendas extends daoAbstract {
             pst.setDouble(7, mcbVendas.getMcbDesconto());
             pst.setString(8, mcbVendas.getMcbData());
             pst.setString(9, mcbVendas.getMcbPagamento());
-        
 
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
-
             Logger.getLogger(daoMcbVendas.class.getName()).log(Level.SEVERE, null, ex);
-
         } catch (SQLException ex) {
-
             Logger.getLogger(daoMcbVendas.class.getName()).log(Level.SEVERE, null, ex);
-
         }
-
     }
 
     @Override
     public Object list(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public Object listAll() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void delete(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
+    @Override
+    public void update(Object object) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
-
-
-

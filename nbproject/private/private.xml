@@ -3,32 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoMcbUsuario.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoMcbCliente.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/bean/McbCliente.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/bean/McbUsuarios.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoAbstract.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoMcbFornecedor.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/View/JDlgMcbCliente.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/View/JDlgMcbUsuario.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/View/JDlgMcbLogin.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/bean/McbFornecedor.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoMcbProduto.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/bean/McbProduto.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoMcbVendedor.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/bean/McbVendedor.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoMcbCompras.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/bean/McbCompras.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoMcbVendas.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/bean/McbVendas.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoMcbVendasProduto.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/bean/McbVendasProduto.java</file>
             <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoMcbComprasProduto.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/bean/McbComprasProduto.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/Teste/JDbcMcbSelect.java</file>
             <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/Teste/JDbcMcbCrud.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/View/JFrmBataglin.java</file>
-            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/imagens/usuario.png</file>
+            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/Teste/JDbcMcbSelect.java</file>
+            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/View/JDlgMcbLogin.java</file>
+            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/bean/McbCompras.java</file>
+            <file>file:/C:/Users/Mikaela/Documents/NetBeansProjects/sistemabataglin/src/dao/daoAbstract.java</file>
         </group>
     </open-files>
 </project-private>

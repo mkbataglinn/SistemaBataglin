@@ -10,6 +10,14 @@ package bean;
  */
 public class McbVendedor {
 
+    private int mcbIdVendedor;
+    private String mcbNome;
+    private String mcbCpf;
+    private String mcbDataContratado;
+    private String mcbTelefone;
+    private String mcbEmail;
+    private String mcbStatus;
+
     public int getMcbIdVendedor() {
         return mcbIdVendedor;
     }
@@ -65,12 +73,4 @@ public class McbVendedor {
     public void setMcbStatus(String mcbStatus) {
         this.mcbStatus = mcbStatus;
     }
-
-    private int mcbIdVendedor;
-    private String mcbNome;
-    private String mcbCpf;
-    private String mcbDataContratado;
-    private String mcbTelefone;
-    private String mcbEmail;
-    private String mcbStatus;
 }

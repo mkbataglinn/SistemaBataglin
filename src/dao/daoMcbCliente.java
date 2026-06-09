@@ -20,7 +20,9 @@ public class daoMcbCliente extends daoAbstract {
 
     @Override
     public void insert(Object object) {
-        McbCliente mcbCliente = new McbCliente ();
+
+        McbCliente mcbCliente = (McbCliente) object;
+
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -35,49 +37,51 @@ public class daoMcbCliente extends daoAbstract {
 
             cnt = DriverManager.getConnection(url, user, password);
 
-            String sql = "insert into mcb_cliente values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            String sql = "insert into mcb_cliente values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
             PreparedStatement pst = cnt.prepareStatement(sql);
 
             pst.setInt(1, mcbCliente.getMcbIdCliente());
             pst.setString(2, mcbCliente.getMcbNome());
-            pst.setString(3, mcbCliente.getMcbBairro());
-            pst.setString(4, mcbCliente.getMcbCpf());
-            pst.setString (5, mcbCliente.getMcbDataNascimento());
-            pst.setString(6, mcbCliente.getMcbCep());
-            pst.setString(6, mcbCliente.getMcbCidade());
-            pst.setString(7, mcbCliente.getMcbEmail());
+            pst.setString(3, mcbCliente.getMcbCpf());
+            pst.setString(4, mcbCliente.getMcbRg());
+            pst.setString(5, mcbCliente.getMcbDataNascimento());
+            pst.setString(6, mcbCliente.getMcbEmail());
+            pst.setString(7, mcbCliente.getMcbTelefone());
             pst.setString(8, mcbCliente.getMcbEndereco());
-            pst.setString(9, mcbCliente.getMcbEstado());
-            pst.setString(10, mcbCliente.getMcbRg());
-            pst.setString(11, mcbCliente.getMcbSenha());
-            pst.setString (12, mcbCliente.getMcbStatus());
-            pst.setString(13, mcbCliente.getMcbTelefone());
-            pst.setString(14, mcbCliente.getMcbTipoCliente());
-        
-
+            pst.setString(9, mcbCliente.getMcbCep());
+            pst.setString(10, mcbCliente.getMcbBairro());
+            pst.setString(11, mcbCliente.getMcbCidade());
+            pst.setString(12, mcbCliente.getMcbEstado());
+            pst.setString(13, mcbCliente.getMcbTipoCliente());
+            pst.setString(14, mcbCliente.getMcbStatus());
+            pst.setString(15, mcbCliente.getMcbSenha());
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
-
             Logger.getLogger(daoMcbCliente.class.getName()).log(Level.SEVERE, null, ex);
-
         } catch (SQLException ex) {
-
             Logger.getLogger(daoMcbCliente.class.getName()).log(Level.SEVERE, null, ex);
-
         }
-
     }
 
     @Override
     public Object list(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public Object listAll() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void delete(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
+    @Override
+    public void update(Object object) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

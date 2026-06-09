@@ -145,5 +145,4 @@ public class McbFornecedor {
     public void setMcbStatus(String mcbStatus) {
         this.mcbStatus = mcbStatus;
     }
-
 }

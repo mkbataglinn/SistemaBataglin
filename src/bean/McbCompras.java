@@ -73,5 +73,4 @@ public class McbCompras {
     public void setMcbData(String mcbData) {
         this.mcbData = mcbData;
     }
-
 }

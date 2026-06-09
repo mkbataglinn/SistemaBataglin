@@ -1,5 +1,5 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Teste;
@@ -19,7 +19,8 @@ public class JDbcMcbCrud {
 
     public static void main(String[] args) {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
             String url, user, password;
             url = "jdbc:mysql://10.7.0.51:33062/db_mikaela_bataglin";
             user = "mikaela_bataglin";
@@ -29,8 +30,9 @@ public class JDbcMcbCrud {
             cnt = DriverManager.getConnection(url, user, password);
             Statement stm = cnt.createStatement();
 
-
-            PreparedStatement pst = cnt.prepareStatement("delete from mcb_usuarios where mcb_idusuarios=?");
+            PreparedStatement pst = cnt.prepareStatement(
+                "delete from mcb_usuarios where mcb_idusuarios=?"
+            );
 
             pst.setInt(1, 508);
             pst.executeUpdate();

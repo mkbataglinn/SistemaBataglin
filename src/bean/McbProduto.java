@@ -73,6 +73,4 @@ public class McbProduto {
     public void setMcbIdFornecedor(int mcbIdFornecedor) {
         this.mcbIdFornecedor = mcbIdFornecedor;
     }
-    
-
 }

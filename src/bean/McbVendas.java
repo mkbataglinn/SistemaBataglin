@@ -91,5 +91,4 @@ public class McbVendas {
     public void setMcbPagamento(String mcbPagamento) {
         this.mcbPagamento = mcbPagamento;
     }
-
 }
