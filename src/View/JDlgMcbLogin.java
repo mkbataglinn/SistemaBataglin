@@ -4,12 +4,16 @@
  */
 package View;
 
+import bean.McbUsuarios;
+import dao.daoMcbUsuario;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 07788816108
  */
 public class JDlgMcbLogin extends javax.swing.JDialog {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgMcbLogin.class.getName());
 
     /**
@@ -21,7 +25,6 @@ public class JDlgMcbLogin extends javax.swing.JDialog {
         setTitle("Login");
     }
 
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -118,23 +121,21 @@ public class JDlgMcbLogin extends javax.swing.JDialog {
 
     private void jBtnMcbConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMcbConfirmarActionPerformed
         // TODO add your handling code here:
-        
-        
-        if (jTxtMcbUsuario.getText().equals("Bataglin")
-                && String.valueOf(jPwfMcbSenha.getPassword()).equals("123456")) {
 
-            JFrmBataglin jFrmBataglin = new JFrmBataglin();
-            jFrmBataglin.setVisible(true);
+        String usuario = jTxtMcbUsuario.getText();
+        String senha = new String(jPwfMcbSenha.getPassword());
 
-            this.dispose();
+        daoMcbUsuario dao = new daoMcbUsuario();
+        McbUsuarios u = dao.login(usuario, senha);
 
+        if (u != null) {
+            new JFrmBataglin().setVisible(true);
+            dispose();
         } else {
-
-            javax.swing.JOptionPane.showMessageDialog(
-                    null,
-                    "Usuário ou senha erradas"
-            );
-
+            JOptionPane.showMessageDialog(this, "Usuário ou senha inválidos!");
+            jTxtMcbUsuario.setText("");
+            jPwfMcbSenha.setText("");
+            jTxtMcbUsuario.requestFocus();
         }
     }//GEN-LAST:event_jBtnMcbConfirmarActionPerformed
 
